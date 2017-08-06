@@ -1,13 +1,18 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+@extends('layouts.app')
 
-</body>
-</html>
+@section('content')
+    <div class="content">
+        <div class="title m-b-md">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-default">
+                    <div class="title m-b-md">
+                        <h1 >Esta pagina no existe</h1>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+@endsection

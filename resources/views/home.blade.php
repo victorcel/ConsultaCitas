@@ -16,7 +16,7 @@
                     </div>
                     <div class="form-group">
                         {!! Form::label('numeroid', 'Numero ID') !!}
-                        {!! Form::number('numeroid', null, ['class' => 'form-control','required' =>'required']) !!}
+                        {!! Form::number('numeroid', null, ['class' => 'form-control','min'=>'0','required' =>'required']) !!}
                     </div>
                     <div class="form-group">
                         {!! Form::submit('Consultar', ['class' => 'btn btn-primary']) !!}
