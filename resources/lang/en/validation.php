@@ -87,6 +87,7 @@ return [
     'unique'               => 'The :attribute has already been taken.',
     'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'The :attribute format is invalid.',
+    'captcha'   => "If you read this message, then you're a robot.",
 
     /*
     |--------------------------------------------------------------------------
@@ -103,6 +104,9 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+        'g-recaptcha-response' => [
+            'required' => 'Presione No soy un robot',
+        ],
     ],
 
     /*
@@ -116,6 +120,8 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+
+    ],
 
 ];

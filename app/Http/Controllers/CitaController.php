@@ -3,6 +3,7 @@
 namespace Citas\Http\Controllers;
 
 use Citas\cita;
+use Citas\Http\Requests\CitaRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -85,7 +86,7 @@ class CitaController extends Controller
         // and paci.tipo_id='.'\''.$request->tipo.'\'');
     }
 
-    public function consulta(Request $request)
+    public function consulta(CitaRequest $request)
     {
         $query = DB::select('select top 100 paci.NombreCompleto,asunto.nombre, cita.fecha_usuario_desea_cita,
             cita.hora, cita.meridiano,cita.estado,cita.asunto
@@ -99,5 +100,6 @@ class CitaController extends Controller
             and paci.num_id=' . '\'' . $request->numeroid . '\'' . '
             and paci.tipo_id=' . '\'' . $request->tipo . '\'');
         return View('consulta', compact('query'));
+        //return dd($request->all());
     }
 }

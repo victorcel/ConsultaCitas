@@ -8,7 +8,7 @@
                     <div class="panel-heading">Datos de tu Cita</div>
 
                     <div class="panel-body">
-
+                        @include('errors')
                         @if(count($query)>=1)
                             @foreach($query as $q)
                                 <table class="table table-bordered">
