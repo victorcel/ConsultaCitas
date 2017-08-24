@@ -98,8 +98,9 @@ class CitaController extends Controller
             
             WHERE cita.estado=\'P\'
             and paci.num_id=' . '\'' . $request->numeroid . '\'' . '
-            and paci.tipo_id=' . '\'' . $request->tipo . '\'');
+            and paci.tipo_id=' . '\'' . $request->tipo . '\'
+            and convert(date,cita.fecha_confirmacion) >= convert(date,getdate())');//
         return View('consulta', compact('query'));
-        //return dd($request->all());
+       // return  dd($request->all());
     }
 }

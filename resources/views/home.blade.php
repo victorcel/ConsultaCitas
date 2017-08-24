@@ -12,11 +12,11 @@
                         {!! Form::open(['route' => 'consulta', 'method' => 'post'] ) !!}
 
                         <div class="form-group">
-                            {!! Form::label('tipo', 'Tipo ID') !!}
-                            {!! Form::select('tipo', ['CC' => 'CC', 'RT' => 'RT'], null, ['placeholder' => 'Selecione...','class' => 'form-control','required' =>'required']) !!}
+                            {!! Form::label('tipo', 'Tipo Identificacion') !!}
+                            {!! Form::select('tipo', ['RT' => 'REGRISTRO CIVIL','TD' => 'TARJETA DE IDENTIDAD','CC' => 'CEDULA DE CUIDADANIA',], null, ['placeholder' => 'Selecione...','class' => 'form-control','required' =>'required']) !!}
                         </div>
                         <div class="form-group">
-                            {!! Form::label('numeroid', 'Numero ID') !!}
+                            {!! Form::label('numeroid', 'Numero Identificacion') !!}
                             {!! Form::number('numeroid', null, ['class' => 'form-control','min'=>'0','required' =>'required']) !!}
                         </div>
                         {!! Captcha::display() !!}

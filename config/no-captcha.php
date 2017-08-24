@@ -19,8 +19,8 @@ return [
      | ------------------------------------------------------------------------------------------------
      */
     'attributes' => [
-        'data-theme' => 'light', // 'light', 'dark'
-        'data-type'  => 'image', // 'image', 'audio'
-        'data-size'  => 'normal', // 'normal', 'compact'
+        'data-theme' => null, // 'light', 'dark'
+        'data-type'  => null, // 'image', 'audio'
+        'data-size'  => null, // 'normal', 'compact'
     ],
 ];
